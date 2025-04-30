@@ -1,17 +1,33 @@
 import objetos.*
+import game.*
 
-describe "aa" {
+describe "test de inicio" {
     method initialize() {
         game.width(15)
         game.height(10)
     }
   test "inicio" {
         
-        assert.notEquals{game.at(0,5), pelota.position()
-        }
-        pelota.inicio()
-        assert.equals{game.at(0,5), pelota.position()
+        assert.notEquals(game.at(0,5), pelota.position())
+        
+        pelota.irAlInicio()
+        assert.equals(game.at(0,5), pelota.position())
 
     }
 }
+
+describe "test de lionel" {
     
+    test "lionel" {
+        method initialize() {
+        game.width(15)
+        game.height(10)
+        }
+    }
+    test "aa"{
+        assert.notEquals(lionel.position())
+    }
+
+        
+}
+       
