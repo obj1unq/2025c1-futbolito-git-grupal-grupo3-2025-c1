@@ -18,12 +18,15 @@ object lionel {
 	}
 
 	method patearBocha() {
-		bocha.position() 
-		//game.at((game.width() - 1).min(position.x() + 3), position.y())
-		//game.at(0.min(position.x() + 3), position.y())
+		
+		bocha.position().posicionBochaPateada() 
 	}
 
 
+	method posicionBochaPateada() {
+		return game.at((game.width() - 1).min(position.x() + 3), position.y())
+		
+	}
 	
 } 
 
