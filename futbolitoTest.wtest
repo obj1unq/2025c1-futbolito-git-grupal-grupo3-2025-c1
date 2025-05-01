@@ -1,16 +1,15 @@
 import wollok.mirror.*
 import objetos.*
 
-describe ""
-
-
-
 
 describe "test de futbol" {
   test "inicio" {
     assert.notEquals(game.at(0,5), pelota.position())
     pelota.inicio() 
     assert.equals(game.at(0,5), pelota.position())
-    
+  }
+
+  test "camiseta" {
+    assert.equals(lionel.position(), game.at(0, position.y()))
   }
 }

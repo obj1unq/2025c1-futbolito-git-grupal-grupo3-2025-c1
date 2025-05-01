@@ -28,11 +28,10 @@ object lionel {
 
 	method Levantarla() {
 		pelota.levantar() 
-		game.schedule(2, pelota.bajar())
+		game.schedule(2, {pelota.bajar()})
 	}
 	
 }
-
 
 object pelota {
 	const property image="pelota.png"
