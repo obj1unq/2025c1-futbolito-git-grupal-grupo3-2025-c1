@@ -11,5 +11,6 @@ describe "test de futbol" {
 
   test "camiseta" {
     assert.equals(lionel.position(), game.at(0, position.y()))
+    lionel.Levantarla()
   }
 }
